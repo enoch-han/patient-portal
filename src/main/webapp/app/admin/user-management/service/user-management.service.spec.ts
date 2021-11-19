@@ -45,8 +45,8 @@ describe('User Service', () => {
       });
       const req = httpMock.expectOne({ method: 'GET' });
 
-      req.flush([Authority.USER, Authority.ADMIN]);
-      expect(expectedResult).toEqual([Authority.USER, Authority.ADMIN]);
+      req.flush([Authority.PATIENT, Authority.ADMIN]);
+      expect(expectedResult).toEqual([Authority.PATIENT, Authority.ADMIN]);
     });
 
     it('should propagate not found response', () => {

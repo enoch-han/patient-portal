@@ -86,6 +86,8 @@
     "@ng-bootstrap/ng-bootstrap": "10.0.0",
     "bootstrap": "4.6.0",
     "dayjs": "1.10.7",
+    "ng-jhipster": "^0.16.0",
+    "ngb-modal": "^2.0.3",
     "ngx-infinite-scroll": "10.0.1",
     "ngx-webstorage": "8.0.0",
     "rxjs": "6.6.7",
