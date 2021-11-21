@@ -2,19 +2,19 @@
 version: '3.8'
 services:
   patientportal-postgresql:
-    image: patientportalht-db:v1.2
+    image: enochdock/patientportalht-db:v1.3
     ports:
       - 127.0.0.1:5432:5432
 
   patientportal-api:
-    image: patientportalht-api:v1.2
+    image: enochdock/patientportalht-api:v1.3
     ports:
       - 127.0.0.1:8080:8080
     depends_on:
       - patientportal-postgresql
 
   patientportal-web:
-    image: patientportalht-web:v1.2
+    image: enochdock/patientportalht-web:v1.3
     ports:
       - 127.0.0.1:9090:8080
     depends_on:
