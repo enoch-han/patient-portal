@@ -20,7 +20,7 @@
             <column name="reason" type="varchar(255)">
                 <constraints nullable="false" />
             </column>
-            <column name="insurance_change" type="bit">
+            <column name="insurance_change" type="boolean">
                 <constraints nullable="false" />
             </column>
             <column name="phone_number" type="varchar(255)">

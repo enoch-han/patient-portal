@@ -46,6 +46,7 @@ export class AppointmentsDialogComponent implements OnInit {
     this.eventManager.broadcast({ name: 'appointmentListModification', content: 'OK' });
     this.isSaving = false;
     this.activeModal.dismiss(result);
+    this.alertService.success('created new appointment');
   }
 
   private onSaveError(error: any): void {
