@@ -2,6 +2,18 @@
 
 This application was generated using JHipster 7.3.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.3.1](https://www.jhipster.tech/documentation-archive/v7.3.1).
 
+## Docker production
+1. all required images are found in my docker hub https://hub.docker.com/u/enochdock
+    there are 3 image files
+    1. the database configuration image https://hub.docker.com/r/enochdock/patientportalht-db
+    2. the api image https://hub.docker.com/r/enochdock/patientportalht-api
+    3. the web image which run on nginx server https://hub.docker.com/r/enochdock/patientportalht-api
+In order to run the web application all we have to do is run this command in the root directory
+```
+docker compose -f docker-compose.yml up
+```
+then open up a browser and listen on port 8080
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
